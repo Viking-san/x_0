@@ -47,7 +47,7 @@ def showWindow():
             elif v == 'x':
                 win.blit(xxx, ((12 + 100 * i), (12 + 100 * j)))
 
-    pg.draw.rect(win, (100, 100, 100), ((50 + (100 * x)) - (side / 2), (50 + (100 * y)) - (side / 2), side, side))
+    pg.draw.rect(win, (100, 100, 100), ((50 + (100 * x)) - (side // 2), (50 + (100 * y)) - (side // 2), side, side))
 
     if winCheck('o'):
         win.blit(owin, (15, 110))
